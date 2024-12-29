@@ -22,6 +22,7 @@ function randomParagraph(){
         //adding each character inside span then adding it inside p
         typingText.innerHTML += spanTag
     });
+    typingText.querySelectorAll("span")[0].classList.add("active");
     // focusing input field on keyboard or click event
     document.addEventListener("keydown", () => inpField.focus())
     typingText.addEventListener("click", () => inpField.focus())
